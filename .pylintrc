@@ -1,0 +1,3 @@
+[TYPECHECK]
+ignored-classes=ForeignKey,ImageField
+disable=all

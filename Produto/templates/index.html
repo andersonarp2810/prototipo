@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} Prototipo {% endblock %}
+
+{% block main %}
+    <ul>
+    {% for produto in produtos %}
+        <li>
+            {{ produto.nome }}
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
