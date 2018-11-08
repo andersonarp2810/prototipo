@@ -5,4 +5,4 @@ from .models import Produto, Foto
 def index(request):
     produtos = Produto.objects.all()
     fotos = Foto.objects.all()
-    return render(request, 'index.html', {'produtos': produtos, 'fotos': fotos})
+    return render(request, 'home_page.html', {'produtos': produtos, 'fotos': fotos})
