@@ -33,6 +33,8 @@ MEDIA_ROOT = 'media'
 
 #STATIC_URL = '/static/'
 
+STATICFILES_DIRS = ['statics']
+
 # Application definition
 
 INSTALLED_APPS = [
