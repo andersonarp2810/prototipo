@@ -11,3 +11,6 @@ def produto(request, id):
     produto = Produto.objects.get(pk=id)
     fotos = Foto.objects.filter(produto=produto)
     return render(request,  'product-page.html', {'produto': produto, 'fotos': fotos, 'descontado': produto.preco - produto.desconto})
+
+def pagamento(request):
+    return render(request, 'checkout-page.html', {})    
